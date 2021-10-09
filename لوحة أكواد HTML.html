@@ -1,0 +1,136 @@
+
+<!-- saved from url=(0044)http://technologytk.ucoz.ae/index/31-1-0-1-1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>تحرير محتوى الصفحة</title>
+<script type="text/javascript">window._rtl=1;</script><script type="text/javascript" src="./لوحة أكواد HTML_files/jquery-1.7.2.js"></script><script type="text/javascript" src="./لوحة أكواد HTML_files/uwnd.js"></script>
+<link type="text/css" rel="StyleSheet" href="./لوحة أكواد HTML_files/layer1.css">
+<link type="text/css" rel="Stylesheet" href="./لوحة أكواد HTML_files/panel1.css">
+<style>.cke{visibility:hidden;}</style><script src="./لوحة أكواد HTML_files/dspixel.js"></script><script type="text/javascript" src="./لوحة أكواد HTML_files/config.js"></script><link rel="stylesheet" type="text/css" href="./لوحة أكواد HTML_files/editor.css"><script type="text/javascript" src="./لوحة أكواد HTML_files/ar.js"></script><script type="text/javascript" src="./لوحة أكواد HTML_files/styles.js"></script><script type="text/javascript" src="./لوحة أكواد HTML_files/plugin.js"></script></head>
+<body style="padding:5px;">
+<div class="xw-tl"><div class="xw-tr"><div class="xw-tc xw-tsps"></div></div></div><div class="xw-ml"><div class="xw-mr"><div class="xw-mc contentBg">
+
+<script type="text/javascript">
+function doUpdateLN(){var ln='&lt;?if($ADD_ENTRY_LINK$)?><div align="$right" style="padding-bottom:3px;">[ <a href="$ADD_ENTRY_LINK$">إضافة مادة</a> ]</div>&lt;?endif?>$LAST_NEWS$';oUtil.obj.saveForUndo();var obj = oUtil.obj;var oEditor=oUtil.oEditor;if (oEditor.document.body.innerHTML=='<br>'){oEditor.document.body.innerHTML = ln;}else {oEditor.document.body.innerHTML+=ln;}}
+
+function openery(){
+try {var tr=checksubmit();if(!tr){return false;}}catch(e){}
+document.getElementById('sbm4').disabled=true;
+new _uWnd('addEnt','تحرير محتوى الصفحة',-310,-100,{autosize:0,modal:1,closeonesc:1,resize:0,onclose:function(){$('#sbm4').removeAttr('disabled');}},{form:'grFormT5'});
+}
+
+function addImgF(){
+var num=parseInt(document.getElementById('numi').value);
+if (num<20){if (num<1){num+=2;}else {num+=1;}var nnum=num-1;document.getElementById('imblock'+nnum).innerHTML+='<span style="padding-left:7px;">['+num+']</span> <input type="file" id="fln'+num+'" name="file'+num+'" size="20" onchange="getimage('+num+');document.getElementById(\'dsfsk1\').style.display=\'\';document.getElementById(\'dsfsk2\').style.display=\'\';"><span id="iCode'+num+'"></span><div id="imblock'+num+'"></div>'; document.getElementById('numi').value=num;}
+if (num>=20) {document.getElementById('iplus').innerHTML='<span style="padding-left:7px;">[1]</span> ';}
+}
+
+function getimage(n){
+var t = document.getElementById('fln'+n);
+if (t.value){
+ext = new Array('png','jpg','gif','jpeg','jpe');
+var img = t.value.replace(/\\/g,'/');
+var pic = img.toLowerCase();
+var ok=0;
+for (i=0;i<ext.length;i++){m = pic.indexOf('.' + ext[i]);if (m != -1) {ok=1;break;}}
+if (ok==1){var code='$IMAGE'+n+'$'; document.getElementById('iCode'+n).innerHTML='&nbsp;<input type="text" readonly onClick="select(this)" name="h1" value="'+code+'" title="ضع هذا الكود في أي مكان من الرسالة" size="'+(code.length)+'" style="font-family:\'courier new\';direction:ltr;text-align:center;background:#F0F0F0;color:#0000FF;border:1px inset"> <input style="font-size:7pt;width:30px;" type="text" name="iws'+n+'" value="400" size="4" maxlength="4" title="Width">x<input style="font-size:7pt;width:30px;" type="text" name="ihs'+n+'" value="500" size="4" maxlength="4" title="Height">'+(n==1?' [<a href=\"javascript://\" rel=\"nofollow\" onclick=\"new _uWnd(\'HelpWd\',\'المساعد\',360,150,{align:\'justify\',closeonesc:1},{url:\'/index/90-4\'});return false;\" class=\"noun\"><b>?</b></a>] ':'');}
+else {document.getElementById('iCode'+n).innerHTML='';_uWnd.alert('صيغة صورة غير مدعومة','',{w:230,h:80,tm:3000});}}
+else {document.getElementById('iCode'+n).innerHTML='';}
+}
+function checkAllG(f,g){var t=document.getElementById('grFormT5')['group'+g];var cha=document.getElementById('grFormT5')['allg'+g].checked==true?1:0;var n=0;for (i=0;i<t.length;i++){if (f){t[i].checked=cha?true:false;}else {if (t[i].checked){n++;}}}if (n==t.length && !f){document.getElementById('grFormT5')['allg'+g].checked=true;}else if (n!=t.length && !f){document.getElementById('grFormT5')['allg'+g].checked=false;}}
+</script>
+<form method="POST" id="grFormT5" style="margin:0;padding:0;" name="addform" enctype="multipart/form-data" action="http://technologytk.ucoz.ae/index/" onsubmit="openery();return false;"><input type="hidden" name="jkd498" value="1"><input type="hidden" name="jkd428" value="1">
+<table border="0" width="100%" cellspacing="1" cellpadding="2" class="manTable" align="center">
+
+<tbody><tr><td width="30%" class="manTd1">اسم الصفحة:</td><td class="manTd2"><input type="text" name="name" style="width:100%" value="الصفحة الرئيسية" size="50" maxlength="100"></td></tr>
+<tr><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+
+<tr><td colspan="2" class="manTdText"><div id="txtPart555message"><div style="padding-bottom:3px;font-size:7pt;float:left;direction:rtl;" class="edtTypeMenu" data-uetarget="message">[<span><a href="javascript://" data-uemode="1" style="display: inline;">المحرر المرئي</a><b style="display: none;">المحرر المرئي</b></span> | <span><a href="javascript://" data-uemode="3" style="display: none;"> لوحة أكواد HTML    </a><b style="display: inline;"> لوحة أكواد HTML    </b></span>]</div>
+		<div style="padding-bottom:3px;">محتوى الصفحة:</div>
+		<div class="ucoz-editor-bbpanel ucoz-editor-panel" style="display:none;padding-bottom:3px;"><span style="padding-right:1px;" id="bc1"><input type="button" title="Bold" value="b" onclick="simpletag(&#39;b&#39;,&#39;&#39;,&#39;&#39;,&#39;message&#39;,&#39;&#39;)" class="codeButtons" id="b" style="width:20px;font-weight:bold"></span><span style="padding-right:1px;" id="bc2"><input type="button" title="Italic" value="i" onclick="simpletag(&#39;i&#39;,&#39;&#39;,&#39;&#39;,&#39;message&#39;,&#39;&#39;)" class="codeButtons" id="i" style="width:20px;font-style:italic"></span><span style="padding-right:1px;" id="bc3"><input type="button" title="Underline" value="u" onclick="simpletag(&#39;u&#39;,&#39;&#39;,&#39;&#39;,&#39;message&#39;,&#39;&#39;)" class="codeButtons" id="u" style="width:20px;text-decoration:underline"></span><span style="padding-right:1px;" id="bc4"><select id="fsize" class="codeButtons" onchange="alterfont(this.options[this.selectedIndex].value,&#39;size&#39;,&#39;message&#39;,&#39;&#39;);this.selectedIndex=0;"><option value="0">SIZE</option><option value="6">6 pt</option><option value="7">7 pt</option><option value="8">8 pt</option><option value="9">9 pt</option><option value="10">10 pt</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="15">15 pt</option><option value="16">16 pt</option><option value="17">17 pt</option><option value="18">18 pt</option><option value="19">19 pt</option><option value="20">20 pt</option><option value="21">21 pt</option><option value="22">22 pt</option></select></span><span style="padding-right:1px;" id="bc6"><select id="fcolor" class="codeButtons" onchange="alterfont(this.options[this.selectedIndex].value, &#39;color&#39;,&#39;message&#39;,&#39;&#39;);this.selectedIndex=0;"><option value="0">COLOR</option><option value="blue" style="color:blue">Blue</option><option value="red" style="color:red">Red</option><option value="purple" style="color:purple">Purple</option><option value="orange" style="color:orange">Orange</option><option value="yellow" style="color:yellow">Yellow</option><option value="gray" style="color:gray">Gray</option><option value="green" style="color:green">Green</option></select></span>
+<span style="padding-right:1px;" id="bc7"><input type="button" title="URL" value="http://" onclick="tag_url(&#39;message&#39;,&#39;&#39;)" class="codeButtons" style="direction:ltr;width:45px;" id="url"></span>
+<span style="padding-right:1px;" id="bc8"><input type="button" title="E-mail" value="@" onclick="tag_email(&#39;message&#39;,&#39;&#39;)" class="codeButtons" style="width:30px;" id="email"></span>
+<span style="padding-right:1px;" id="bc9"><input type="button" title="Image" value="img" onclick="tag_image(&#39;message&#39;,&#39;&#39;)" class="codeButtons" style="width:35px;" id="img"></span><span style="padding-right:1px;" id="bc18"><input type="button" title="Hide from Guest" value="hide" onclick="simpletag(&#39;hide&#39;,&#39;&#39;,&#39;&#39;,&#39;message&#39;,&#39;&#39;)" class="codeButtons" style="width:40px;" id="hide"></span><span style="padding-right:1px;" id="bc12"><input type="button" title="List" value="list" onclick="tag_list(&#39;message&#39;,&#39;&#39;)" class="codeButtons" id="list" style="width:30px;"></span><span style="padding-right:1px;" id="bc13"><input type="button" title="Left" style="width:20px;text-align:left;" value="···" onclick="simpletag(&#39;l&#39;,&#39;cdl&#39;,&#39;···&#39;,&#39;message&#39;)" class="codeButtons" id="cdl"></span><span style="padding-right:1px;" id="bc14"><input type="button" title="Center" style="width:20px;text-align:center;" value="···" onclick="simpletag(&#39;c&#39;,&#39;cdc&#39;,&#39;···&#39;,&#39;message&#39;)" class="codeButtons" id="cdc"></span><span style="padding-right:1px;" id="bc15"><input type="button" title="Right" style="width:20px;text-align:right;" value="···" onclick="simpletag(&#39;r&#39;,&#39;cdr&#39;,&#39;···&#39;,&#39;message&#39;)" class="codeButtons" id="cdr"></span><span style="padding-right:1px;" id="bc16"><input type="button" title="All codes" style="width:60px;" value="All codes" onclick="window.open(&#39;http://technologytk.ucoz.ae/index/17&#39;,&#39;bbcodes&#39;,&#39;scrollbars=1,width=550,height=450,left=0,top=0&#39;);" class="codeButtons"></span><span style="padding-right:1px;" id="bc17"><input style="font-weight:bold;width:20px" type="button" value="/" class="codeButtons codeCloseAll" title="Close all opened codes" onclick="closeall(&#39;message&#39;,&#39;&#39;);"></span><input type="hidden" id="tagcount" value="0">
+</div>
+		<div class="ucoz-editor-htpanel ucoz-editor-panel" style="padding-bottom: 3px;">
+<span style="padding-right:1px;" id="hbc1"><input type="button" title="Bold" value="b" onclick="_simpletag(&#39;b&#39;,&#39;message&#39;)" class="codeButtons" name="b" style="width:20px;font-weight:bold"></span><span style="padding-right:1px;" id="hbc2"><input type="button" title="Italic" value="i" onclick="_simpletag(&#39;i&#39;,&#39;message&#39;)" class="codeButtons" name="i" style="width:20px;font-style:italic"></span><span style="padding-right:1px;" id="hbc3"><input type="button" title="Underline" value="u" onclick="_simpletag(&#39;u&#39;,&#39;message&#39;)" class="codeButtons" name="u" style="width:20px;text-decoration:underline"></span><span style="padding-right:1px;" id="hbc4"><select name="fsize" class="codeButtons" onchange="_alterfont(this.options[this.selectedIndex].value,&#39;size&#39;,&#39;message&#39;);this.selectedIndex=0;"><option value="0">SIZE</option><option value="8">8 pt</option><option value="9">9 pt</option><option value="10">10 pt</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="15">15 pt</option><option value="16">16 pt</option><option value="17">17 pt</option><option value="18">18 pt</option></select></span><span style="padding-right:1px;" id="hbc5"><select name="ffont" class="codeButtons" onchange="_alterfont(this.options[this.selectedIndex].value,&#39;font&#39;,&#39;message&#39;);this.selectedIndex=0;"><option value="0">FAMILY</option><option value="Arial">Arial</option><option value="Times">Times</option><option value="Courier">Courier</option><option value="Impact">Impact</option><option value="Geneva">Geneva</option><option value="Optima">Optima</option></select></span><span style="padding-right:1px;" id="hbc6"><select name="fcolor" class="codeButtons" onchange="_alterfont(this.options[this.selectedIndex].value,&#39;color&#39;,&#39;message&#39;);this.selectedIndex=0;"><option value="0">COLOR</option><option value="blue" style="color:blue">Blue</option><option value="red" style="color:red">Red</option><option value="purple" style="color:purple">Purple</option><option value="orange" style="color:orange">Orange</option><option value="yellow" style="color:yellow">Yellow</option><option value="gray" style="color:gray">Gray</option><option value="green" style="color:green">Green</option></select></span><span style="padding-right:1px;" id="hbc7"><input type="button" title="URL" value="http://" onclick="_tag_url(&#39;message&#39;)" class="codeButtons" name="url" style="direction:ltr;width:45px;"></span><span style="padding-right:1px;" id="hbc8"><input type="button" title="E-mail" value="@" onclick="_tag_email(&#39;message&#39;)" class="codeButtons" name="email" style="width:30px;"></span><span style="padding-right:1px;" id="hbc9"><input type="button" title="Image" value="img" onclick="_tag_image(&#39;message&#39;)" class="codeButtons" name="img" style="width:35px;"></span><span style="padding-right:1px;" id="hbc10"><input type="button" title="List" value="list" onclick="_tag_list(&#39;message&#39;)" class="codeButtons" name="list" style="width:40px;"></span><span style="padding-right:1px;" id="hbc11"><input type="button" title="Left" style="width:20px;text-align:left;" value="···" onclick="_alterfont(&#39;left&#39;,&#39;pos&#39;,&#39;message&#39;)" class="codeButtons" name="left"></span><span style="padding-right:1px;" id="hbc12"><input type="button" title="Center" style="width:20px;text-align:center;" value="···" onclick="_alterfont(&#39;center&#39;,&#39;pos&#39;,&#39;message&#39;)" class="codeButtons" name="center"></span><span style="padding-right:1px;" id="hbc13"><input type="button" title="Right" style="width:20px;text-align:right;" value="···" onclick="_alterfont(&#39;right&#39;,&#39;pos&#39;,&#39;message&#39;)" class="codeButtons" name="right"></span></div>
+		<textarea rows="10" style="width: 100%; height: 400px;" id="message" name="message" class="manFl" cols="40">&lt;?if($ADD_ENTRY_LINK$)?&gt;&lt;div style="text-align:left;padding-bottom:3px;"&gt;[ &lt;a href="$ADD_ENTRY_LINK$"&gt;إضافة مادة خبر&lt;/a&gt; ]&lt;/div&gt;&lt;?endif?&gt;$LAST_NEWS$</textarea>
+		<input type="hidden" id="edttmessage" name="edttmessage" value="3">
+		
+		<div class="ucoz-editor-bottom" style="display: block;">
+			<input id="format_message" type="checkbox" name="format_message" value="1" data-choice=""><label for="format_message">استبدال اسطر التغذية بـ وسم <b>&lt;BR&gt;</b></label>
+			<input id="html_message" type="checkbox" name="html_message" value="1" checked=""><label for="html_message">تشغيل وسم HTML </label>
+		</div>
+	<script type="text/javascript" src="./لوحة أكواد HTML_files/ckeditor.js"></script>
+			<link rel="stylesheet" type="text/css" href="./لوحة أكواد HTML_files/ueditor.css">
+			<script type="text/javascript">
+				if( !window.uCoz ) window.uCoz = {};
+				if( !uCoz.editor ) uCoz.editor = {};
+				uCoz.editor.type = 1; // preferred editor type (Number), 1 - visual, 2 - BBCode, 3 - pure HTML
+				uCoz.editor.html_allowed = true;
+				uCoz.editor.bbcodes_src = 'http://s108.ucoz.net/src/bbcodes.js?2';
+				uCoz.editor.ckeditor_src = 'http://s108.ucoz.net/src/ckeditor/ckeditor.js';
+				uCoz.editor.lang = 'ar'; // site language code
+				uCoz.editor.use_br = true; // use <br> instead of <p> for Enter
+			</script>
+			<script type="text/javascript" src="./لوحة أكواد HTML_files/ueditor.js"></script>
+		<script>$(function() { CKEDITOR.replace('message', { height: 400, language: 'ar' }); })</script></div></td></tr>
+<tr><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+<tr><td class="manTd1">الصور [<a href="javascript://" rel="nofollow" onclick="new _uWnd(&#39;HelpWd&#39;,&#39;المساعد&#39;,360,150,{align:&#39;justify&#39;,closeonesc:1},{url:&#39;/index/90-5&#39;});return false;" class="noun"><b>?</b></a>]:<div class="fHelp">الحد الأقصى- <b>2000</b>Kb</div></td><td class="manTd2">
+		
+		<script type="text/javascript">
+			$(function() {
+				var inputs, wmark_checkbox = $('#entry-add-wmark'), img_ext = {
+					jpg: true,
+					jpeg: true,
+					png: true,
+					jpe: true
+				};
+				function is_image(path) {
+					var ext = /\.([^\.]+)$/i.exec(path); ext = ext ? ext[1].toLowerCase() : '';
+					return img_ext[ext] || false;
+				};
+				function handle_inputs() {
+					inputs = $('input[type="file"][name^="file"], input[type="file"][name^="photo"]');
+					inputs.change(function(event) {
+						var img_cnt = inputs.filter(function(index) {
+							return is_image(this.value);
+						}).length;
+						wmark_checkbox[ img_cnt ? 'fadeIn' : 'fadeOut' ]('fast');
+					});
+				};
+				$('#iplus').click(handle_inputs);
+				$('.editImgBlock').click(handle_inputs);
+				handle_inputs();
+			});
+		</script>
+	
+		<div id="entry-add-wmark" style="display: none;">
+			<label>
+				<input type="checkbox" name="add_wmark" checked="">
+				تطبيق العلامة المائية على الصور
+			</label>
+		</div>
+	<div style="display:inline;" id="iplus"><input class="button" style="width:24px;" type="button" value=" + " onclick="addImgF();" title="إضافة حقل للملف"> </div><span id="edtL1" class="editImgBlock">[ <a href="javascript://" onclick="document.getElementById(&#39;edtL1&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;fln1&#39;).style.display=&#39;&#39;;return false;">تغيير</a> ] &nbsp; </span><input style="display:none;" type="file" id="fln1" name="file1" size="20" onchange="getimage(1);document.getElementById(&#39;dsfsk1&#39;).style.display=&#39;&#39;;document.getElementById(&#39;dsfsk2&#39;).style.display=&#39;&#39;;"><span id="iCode1"></span><input type="checkbox" id="del_img1" name="del_img1" value="1"><label for="del_img1" style="font-size:7pt;">حذف</label> <a href="http://technologytk.ucoz.ae/_si/0/29774061.jpg" target="_blank" style="text-decoration:none">[<b>i</b>]</a><div id="imblock1"></div></td></tr>
+<tr><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+<tr id="dsfsk1" style="display:none;"><td class="manTd1">الأحجام القصوى للصورة الكاملة:</td><td class="manTd2"><input type="text" name="owsize" maxlength="4" value="1500" size="4">x<input type="text" name="ohsize" value="1500" maxlength="4" size="4"></td></tr>
+<tr id="dsfsk2" style="display:none;"><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+<tr>
+	<td class="manTd1">خصائص:</td>
+	<td class="manTd2">
+		<input type="checkbox" name="pending" id="pen" value="1"> <label for="pen">محتوى الصفحة غير متاح مؤقتاً</label><br><input type="checkbox" name="owntmpl" id="owntmpl" value="1"> <label for="owntmpl">استخدام نموذج شخصي للصفحة.</label> [<a href="javascript://" rel="nofollow" onclick="new _uWnd(&#39;HelpWd&#39;,&#39;المساعد&#39;,360,150,{align:&#39;justify&#39;,closeonesc:1},{url:&#39;/index/90-3&#39;});return false;" class="noun"><b>?</b></a>]<br><input type="checkbox" id="uto" name="uto" value="1"> <label for="uto">تغيير الروابط الخارجية باستخدام خدمة u.to</label> [<a href="javascript://" rel="nofollow" onclick="new _uWnd(&#39;HelpWd&#39;,&#39;المساعد&#39;,360,150,{align:&#39;justify&#39;,closeonesc:1},{url:&#39;/index/90-18&#39;});return false;" class="noun"><b>?</b></a>]
+		
+	</td>
+</tr>
+<tr><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+
+<tr><td class="manTd1">المجموعات، الذين يملكون صلاحية الدخول للصفحة :</td><td valign="bottom" class="manTd2"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="1" id="uGrp11" checked=""><label for="uGrp11">مستخدمين</label></td><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="2" id="uGrp12" checked=""><label for="uGrp12">مستخدمين تم تدقيقهم</label></td><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="3" id="uGrp13" checked=""><label for="uGrp13">المشرفين</label></td></tr><tr><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="4" id="uGrp14" checked=""><label for="uGrp14">المدراء</label></td><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="251" id="uGrp1251" checked=""><label for="uGrp1251">أصدقاء</label></td><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="255" id="uGrp1255" checked=""><label for="uGrp1255">ممنوعين</label></td></tr><tr><td style="padding-right:10px;"><input type="checkbox" onclick="checkAllG(0,1);" name="group1" value="999" id="uGrp1999" checked=""><label for="uGrp1999">الضيوف</label></td><td><input id="allg1" type="checkbox" name="allg1" value="1" onclick="checkAllG(1,1);" checked=""><label for="allg1" style="color:blue;">كل المجموعات</label></td></tr></tbody></table></td></tr>
+<tr><td colspan="2" height="10" class="manTdSep"><hr class="manHr"></td></tr>
+<tr><td colspan="2" class="manTdBut" align="center"><input type="submit" style="display:none;" id="doSmbBt"><input class="manFlSbm" id="sbm4" type="button" style="font-weight:bold" value="حفظ" onclick="document.getElementById(&#39;doSmbBt&#39;).click();"></td></tr></tbody></table>
+<input type="hidden" name="s" value="1"><input type="hidden" name="a" value="31"><input type="hidden" name="t" value="1">
+<input type="hidden" name="ssid" value="YtFSe_9L"><input type="hidden" id="numi" value="1">
+</form>
+
+</div></div></div><div class="xw-bl"><div class="xw-br"><div class="xw-bc"><div class="xw-footer"></div></div></div></div>
+
+<script type="text/javascript">var script = document.createElement("script");script.src="/stat/dspixel.js?ab=uc&cl="+window.location.href+"&bcn="+navigator.appCodeName+"&bn="+navigator.appName+"&bv="+navigator.appVersion+"&ce="+navigator.cookieEnabled+"&bl="+navigator.language+"&np="+navigator.platform+"&sw="+screen.width+"&sh="+screen.height+"&r="+Math.random();document.getElementsByTagName("head")[0].appendChild(script);</script><script type="text/javascript">new Image().src = "http://ucounter.ucoz.net/"+Math.random()+".gif?cid=ucoz&r64="+window.btoa(document.referrer)+"&cb="+Math.random();</script>
+	<script async="async" src="./لوحة أكواد HTML_files/track.js"></script></body></html>
